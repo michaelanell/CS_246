@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollectBrokerageInfo">
+
+    <EditText
+        android:id="@+id/brokerageName"
+        android:layout_width="213dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/brokerageLicenseNoLabel"
+        app:layout_constraintEnd_toEndOf="@+id/brokerageLicenseNo"
+        app:layout_constraintStart_toStartOf="@+id/brokerageLicenseNo" />
+
+    <TextView
+        android:id="@+id/brokerageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="61dp"
+        android:text="@string/agent_brokerage_title"
+        app:layout_constraintBottom_toTopOf="@+id/brokerageNameLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/brokerageLicenseNoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="14dp"
+        android:labelFor="@id/brokerageLicenseNo"
+        android:text="@string/agent_brokerage_license_number"
+        app:layout_constraintBottom_toTopOf="@+id/brokerageLicenseNo"
+        app:layout_constraintStart_toStartOf="@+id/brokerageLicenseNo" />
+
+    <TextView
+        android:id="@+id/brokerageNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="20dp"
+        android:labelFor="@id/brokerageName"
+        android:text="@string/agent_brokerage_name"
+        app:layout_constraintBottom_toTopOf="@+id/brokerageName"
+        app:layout_constraintStart_toStartOf="@+id/brokerageName" />
+
+    <Button
+        android:id="@+id/brokerageNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="77dp"
+        android:onClick="collectDueByInfo"
+        android:text="Next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brokerageLicenseNo" />
+
+    <EditText
+        android:id="@+id/brokerageLicenseNo"
+        android:layout_width="220dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="287dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/brokerageNextButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

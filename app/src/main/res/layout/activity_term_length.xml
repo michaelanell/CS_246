@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermLength">
+
+    <EditText
+        android:id="@+id/startDate"
+        android:layout_width="0dp"
+        android:layout_height="68dp"
+        android:layout_marginEnd="61dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/startDateLabel"
+        app:layout_constraintTop_toTopOf="@+id/startDateLabel" />
+
+    <TextView
+        android:id="@+id/termLengthTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="67dp"
+        android:text="@string/term_length_title"
+        app:layout_constraintBottom_toTopOf="@+id/startDate"
+        app:layout_constraintStart_toStartOf="@+id/startDate" />
+
+    <TextView
+        android:id="@+id/endDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="43dp"
+        android:labelFor="@id/endDate"
+        android:text="@string/term_length_end"
+        app:layout_constraintBottom_toBottomOf="@+id/endDate"
+        app:layout_constraintEnd_toStartOf="@+id/endDate"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/termNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="203dp"
+        android:text="@string/term_length_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/startDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="248dp"
+        android:layout_marginEnd="15dp"
+        android:labelFor="@id/startDate"
+        android:text="@string/term_length_start"
+        app:layout_constraintEnd_toStartOf="@+id/startDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/endDate"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="112dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="@+id/termNextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/endDateLabel"
+        app:layout_constraintTop_toTopOf="@+id/startDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

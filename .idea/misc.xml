@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/layout/activity_collect_brokerage_info.xml" value="0.20993957519531253" />
+        <entry key="app/src/main/res/layout/activity_collect_buyer2_info.xml" value="0.28535919189453113" />
+        <entry key="app/src/main/res/layout/activity_collect_buyer_address.xml" value="0.24072265625000003" />
+        <entry key="app/src/main/res/layout/activity_collect_buyer_info.xml" value="0.2671417236328126" />
+        <entry key="app/src/main/res/layout/activity_define_relationship_to_client.xml" value="0.24361572265624998" />
+        <entry key="app/src/main/res/layout/activity_due_by.xml" value="0.17536926269531244" />
+        <entry key="app/src/main/res/layout/activity_dueby.xml" value="0.23852386474609377" />
+        <entry key="app/src/main/res/layout/activity_fees.xml" value="0.19718933105468742" />
+        <entry key="app/src/main/res/layout/activity_get_market_area.xml" value="0.23913421630859372" />
+        <entry key="app/src/main/res/layout/activity_intermediary.xml" value="0.25002746582031243" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.21653594970703127" />
+        <entry key="app/src/main/res/layout/activity_relationship_to_client.xml" value="0.3155487060546875" />
+        <entry key="app/src/main/res/layout/activity_representations.xml" value="0.29349365234375" />
+        <entry key="app/src/main/res/layout/activity_term_length.xml" value="0.23701934814453124" />
+        <entry key="app/src/main/res/layout/collect_agent_info.xml" value="0.19454803466796877" />
+        <entry key="app/src/main/res/layout/collect_brokerage_info.xml" value="0.21653594970703127" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.32705230712890626" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

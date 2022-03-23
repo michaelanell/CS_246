@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">CThat App 1</string>
+    <string name="start_button">Start</string>
+    <string name="gai_section_1_title">REQUEST FROM: (Your Details)</string>
+    <string name="agent_name_first">First Name:</string>
+    <string name="agent_name_last">Last Name:</string>
+    <string name="agent_email">Email:</string>
+    <string name="agent_license_number">License Number:</string>
+
+    <string name="agent_brokerage_title">Brokerage Information:</string>
+    <string name="agent_brokerage_name">Brokerages Printed Name:</string>
+    <string name="agent_brokerage_license_number">Brokers License Number:</string>
+    <string name="agent_brokerage_button">NEXT</string>
+
+    <string name="due_by_title">DUE BY:</string>
+    <string name="request_due_date">Date:</string>
+    <string name="request_due_time">Time:</string>
+    <string name="request_due_button">NEXT</string>
+
+    <string name="parties_title">Parties:</string>
+    <string name="parties_title_2">Parties: Buyer Two</string>
+    <string name="number_of_parties">Number of Buyers:</string>
+    <string name="one_buyer">1</string>
+    <string name="two_buyers">2</string>
+    <string name="buyer_one_first_name">First Name:</string>
+    <string name="buyer_one_last_name">Last Name:</string>
+    <string name="buyer_one_email">Email:</string>
+    <string name="buyer_one_phone">Phone:</string>
+    <string name="buyer_add_buyer">Add Buyer</string>
+    <string name="buyer_one_button">NEXT</string>
+
+    <string name="buyer_two_first_name">First Name:</string>
+    <string name="buyer_two_last_name">Last Name:</string>
+    <string name="buyer_two_email">Email:</string>
+    <string name="buyer_two_phone">Phone:</string>
+    <string name="buyer_two_button">NEXT</string>
+    <string name="agent_related_to_buyer">Are you related to your client?:</string>
+
+    <string name="buyer_address_title">Buyer\'s Current Address</string>
+    <string name="buyer_address_street_address">Street Address:</string>
+    <string name="buyer_address_city">City:</string>
+    <string name="buyer_address_state">State:</string>
+    <string name="buyer_address_zip">Zip Code:</string>
+    <string name="buyer_next_button">NEXT</string>
+
+    <string name="agent_buyer_relationship_exists">Are you related to your client?</string>
+    <string name="agent_relationship_to_buyer">Relationship to Client:</string>
+    <string name="agent_client_relationship_no">Yes</string>
+    <string name="agent_client_relationship_yes">No</string>
+    <string name="agent_client_relationship_button">NEXT</string>
+
+    <string name="define_market_area">Define Market Area:</string>
+    <string name="county_collin">Collin</string>
+    <string name="county_dallas">Dallas</string>
+    <string name="county_tarrant">Tarrant</string>
+    <string name="county_rockwall">Rockwall</string>
+    <string name="county_denton">Denton</string>
+    <string name="county_other">Other</string>
+    <string name="county_next_button">NEXT</string>
+
+    <string name="term_length_title">Define Term Length</string>
+    <string name="term_length_start">Start Date</string>
+    <string name="term_length_end">End Date</string>
+    <string name="term_length_button">NEXT</string>
+
+    <string name="representations_title">Representations</string>
+    <string name="representations_explanation">Name any employer, relocation company, or other entity that will provide benefits to Client when acquiring property in the market area:</string>
+    <string name="representations_next">NEXT</string>
+
+    <string name="intermediary_title">Intermediary Status</string>
+    <string name="intermediary_status_yes">Intermediary Status</string>
+    <string name="intermediary_status_no">No Intermediary Status</string>
+    <string name="intermediary_next_button">NEXT</string>
+
+</resources>
