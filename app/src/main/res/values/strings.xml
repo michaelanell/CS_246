@@ -77,10 +77,11 @@
     <string name="sale_fees_button">NEXT</string>
 
     <string name="lease_fees_title">Lease Fees</string>
-    <string name="fees_lease">Lease: if Client agrees to lease property in the market area a fee equal to:</string>
-    <string name="fees_lease_one_rent">% of one months rent</string>
-    <string name="fees_all_rents">% of all rents to be paid over the term of the lease.</string>
+    <string name="lease_fees__radio_label">If Client agrees to lease property in the market area a fee equal to:</string>
+    <string name="lease_fees_lease_one_rent">% of one months rent</string>
+    <string name="lease_fees_all_rents">% of all rents to be paid over the term of the lease.</string>
     <string name="lease_agreed_percentage">Agreed Percentage:</string>
+    <string name="lease_button">NEXT</string>
 
     <string name="additional_fees_title">Additional Fees:</string>
     <string name="construction_fees">Construction: If Client uses Broker’s services to procure or negotiate the construction of improvements to property that Client owns or may acquire, Client ensures that Broker will receive from Client or the contractor(s) at the time the construction is substantially complete a fee equal to:</string>
