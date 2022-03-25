@@ -45,8 +45,8 @@
 
     <string name="agent_buyer_relationship_exists">Are you related to your client?</string>
     <string name="agent_relationship_to_buyer">Relationship to Client:</string>
-    <string name="agent_client_relationship_no">Yes</string>
-    <string name="agent_client_relationship_yes">No</string>
+    <string name="agent_client_relationship_no">No</string>
+    <string name="agent_client_relationship_yes">Yes</string>
     <string name="agent_client_relationship_button">NEXT</string>
 
     <string name="define_market_area">Define Market Area:</string>
@@ -72,14 +72,17 @@
     <string name="intermediary_status_no">No Intermediary Status</string>
     <string name="intermediary_next_button">NEXT</string>
 
-    <string name="fees_title">Fees</string>
-    <string name="fees_sale">Sale:</string>
+    <string name="sale_fees_title">Sale Fees</string>
+    <string name="sale_fees_sale">Percentage Broker will receive from sale:</string>
+    <string name="sale_fees_button">NEXT</string>
+
+    <string name="lease_fees_title">Lease Fees</string>
     <string name="fees_lease">Lease: if Client agrees to lease property in the market area a fee equal to:</string>
     <string name="fees_lease_one_rent">% of one months rent</string>
     <string name="fees_all_rents">% of all rents to be paid over the term of the lease.</string>
     <string name="lease_agreed_percentage">Agreed Percentage:</string>
 
-    <string name="additional_fees_title">In addition to the commission, Broker is entitled to the following fees:</string>
+    <string name="additional_fees_title">Additional Fees:</string>
     <string name="construction_fees">Construction: If Client uses Broker’s services to procure or negotiate the construction of improvements to property that Client owns or may acquire, Client ensures that Broker will receive from Client or the contractor(s) at the time the construction is substantially complete a fee equal to:</string>
     <string name="service_provider_fees">Service Providers: If Broker refers Client or any party to a transaction contemplated by this agreement to a service provider (for example, mover, cable company, telecommunications provider, utility, or contractor) Broker may receive a fee from the service provider for the referral</string>
     <string name="other_fees">Other Broker Fees:</string>
@@ -94,5 +97,4 @@
     <string name="special_instructions_explanation">Enter special instructions to your Transaction Coordinator:</string>
 
 
-    
 </resources>

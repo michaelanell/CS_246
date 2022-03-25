@@ -6,17 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class CollectBuyerAddress extends AppCompatActivity {
+public class SaleFees extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_collect_buyer_address);
+        setContentView(R.layout.activity_sale_fees);
     }
 
-
-    public void isThereClientRelationship(View view){
-        Intent intent = new Intent(this, IsThereClientRelationship.class);
+    public void getLeaseFees(View view) {
+        Intent intent = new Intent(this, LeaseFees.class);
         startActivity(intent);
     }
 }

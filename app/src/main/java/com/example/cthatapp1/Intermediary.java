@@ -15,8 +15,8 @@ public class Intermediary extends AppCompatActivity {
 
     }
 
-    public void getFees(View view) {
-        Intent intent = new Intent(this, Fees.class);
+    public void getSaleFees(View view) {
+        Intent intent = new Intent(this, SaleFees.class);
         startActivity(intent);
     }
 }

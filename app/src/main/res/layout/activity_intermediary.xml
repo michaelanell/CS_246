@@ -6,17 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Intermediary">
 
-    <RadioButton
-        android:id="@+id/IntermediaryStatusNo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="33dp"
-        android:onClick="getFees"
-        android:text="@string/intermediary_status_no"
-        app:layout_constraintStart_toStartOf="@+id/IntermediaryStatusYes"
-        app:layout_constraintTop_toBottomOf="@+id/IntermediaryStatusYes" />
-
     <TextView
         android:id="@+id/intermediaryTitle"
         android:layout_width="wrap_content"
@@ -27,13 +16,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <RadioButton
-        android:id="@+id/IntermediaryStatusYes"
+    <Button
+        android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:onClick="getFees"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="getSaleFees"
         android:text="@string/intermediary_status_yes"
-        app:layout_constraintStart_toStartOf="@+id/intermediaryTitle"
-        app:layout_constraintTop_toBottomOf="@+id/intermediaryTitle" />
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getSaleFees"
+        android:text="@string/intermediary_status_no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

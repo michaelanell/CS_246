@@ -10,7 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CThatApp1">
         <activity
-            android:name=".Fees"
+            android:name=".LeaseFees"
+            android:exported="false" />
+        <activity
+            android:name=".SaleFees"
+            android:exported="false" />
+        <activity
+            android:name=".IntemediaryStatus"
+            android:exported="false" />
+        <activity
+            android:name=".IsThereClientRelationship"
             android:exported="false" />
         <activity
             android:name=".Intermediary"
