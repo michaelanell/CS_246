@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CThatApp1">
         <activity
+            android:name=".DisplayEntry"
+            android:exported="false" />
+        <activity
+            android:name=".SpecialInstructions"
+            android:exported="false" />
+        <activity
+            android:name=".SpecialProvisions"
+            android:exported="false" />
+        <activity
+            android:name=".Addenda2"
+            android:exported="false" />
+        <activity
+            android:name=".Addenda"
+            android:exported="false" />
+        <activity
             android:name=".ProtectionPeriod"
             android:exported="false" />
         <activity

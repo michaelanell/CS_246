@@ -14,7 +14,7 @@ public class Representations extends AppCompatActivity {
         setContentView(R.layout.activity_representations);
     }
 
-    public void getIntemediaryStatus(View view) {
+    public void getIntermediaryStatus(View view) {
         Intent intent = new Intent(this, Intermediary.class);
         startActivity(intent);
     }

@@ -48,6 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
         android:layout_marginBottom="234dp"
+        android:onClick="getAddenda"
         android:text="@string/protection_period_next_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"

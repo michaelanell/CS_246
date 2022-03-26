@@ -6,16 +6,17 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class ProtectionPeriod extends AppCompatActivity {
+public class SpecialInstructions extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_protection_period);
+        setContentView(R.layout.activity_special_instructions);
     }
 
-    public void getAddenda(View view) {
-        Intent intent = new Intent(this, Addenda.class);
+    public void displayEntry(View view) {
+        Intent intent = new Intent(this, DisplayEntry.class);
         startActivity(intent);
     }
+
 }

@@ -103,10 +103,24 @@
 
     <string name="addenda_checklist_title">Addenda and Other Documents</string>
     <string name="addenda_checklist">Check all that apply:</string>
+    <string name="addenda_checklist_next_button">NEXT</string>
+    <string name="addenda_iabs">Information About Brokerage Services</string>
+    <string name="addenda_mold">Protecting Your Home From Mold</string>
+    <string name="addenda_insurance">Information Concerning Property Insurance</string>
+    <string name="addenda_general">General Information and Notice to a Buyer</string>
+    <string name="addenda_lead">Protect Your Family From Lead In Your Home</string>
+    <string name="addenda_hazard">Information About Special Flood Hazard Areas</string>
+    <string name="addenda_inspection">For Your Protection Get A Home Inspection</string>
+    <string name="addenda_other">Other:</string>
+    <string name="addenda2_checklist_next_button">NEXT</string>
 
+    <string name="special_provisions_title">Special Provisions</string>
     <string name="special_provisions">Special Provisions:</string>
+    <string name="special_provisions_next_button">NEXT</string>
+
+
     <string name="special_instructions">Special Instructions, if any:</string>
     <string name="special_instructions_explanation">Enter special instructions to your Transaction Coordinator:</string>
-
+    <string name="special_instructions_next_button">NEXT</string>
 
 </resources>

@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="69dp"
         android:layout_marginBottom="246dp"
-        android:onClick="getIntemediaryStatus"
+        android:onClick="getIntermediaryStatus"
         android:text="@string/representations_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

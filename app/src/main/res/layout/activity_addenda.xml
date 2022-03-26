@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Addenda">
+
+    <TextView
+        android:id="@+id/addendaTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="@string/addenda_checklist_title"
+        app:layout_constraintBottom_toTopOf="@+id/addendaLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/addendaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:text="@string/addenda_checklist"
+        app:layout_constraintBottom_toTopOf="@+id/addendaIABS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/addendaInsurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/addenda_insurance"
+        app:layout_constraintStart_toStartOf="@+id/addendaMold"
+        app:layout_constraintTop_toBottomOf="@+id/addendaMold" />
+
+    <CheckBox
+        android:id="@+id/addendaMold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="@string/addenda_mold"
+        app:layout_constraintStart_toStartOf="@+id/addendaIABS"
+        app:layout_constraintTop_toBottomOf="@+id/addendaIABS" />
+
+    <CheckBox
+        android:id="@+id/addendaIABS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="257dp"
+        android:text="@string/addenda_iabs"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/addendaGeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/addenda_general"
+        app:layout_constraintEnd_toEndOf="@+id/addendaInsurance"
+        app:layout_constraintTop_toBottomOf="@+id/addendaInsurance" />
+
+    <Button
+        android:id="@+id/addendaNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="14dp"
+        android:onClick="getAddenda2"
+        android:text="@string/addenda_checklist_next_button"
+        app:layout_constraintEnd_toEndOf="@+id/addendaGeneral"
+        app:layout_constraintTop_toBottomOf="@+id/addendaGeneral" />
+</androidx.constraintlayout.widget.ConstraintLayout>

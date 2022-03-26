@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_addenda.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_addenda2.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_collect_brokerage_info.xml" value="0.20993957519531253" />
         <entry key="app/src/main/res/layout/activity_collect_buyer2_info.xml" value="0.28535919189453113" />
         <entry key="app/src/main/res/layout/activity_collect_buyer_address.xml" value="0.24072265625000003" />
@@ -24,6 +26,8 @@
         <entry key="app/src/main/res/layout/activity_representations.xml" value="0.29349365234375" />
         <entry key="app/src/main/res/layout/activity_sale_fees.xml" value="0.2611892700195312" />
         <entry key="app/src/main/res/layout/activity_service_provider_fees.xml" value="0.2786453247070312" />
+        <entry key="app/src/main/res/layout/activity_special_instructions.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_special_provisions.xml" value="0.1753692626953125" />
         <entry key="app/src/main/res/layout/activity_term_length.xml" value="0.23701934814453124" />
         <entry key="app/src/main/res/layout/collect_agent_info.xml" value="0.19454803466796877" />
         <entry key="app/src/main/res/layout/collect_brokerage_info.xml" value="0.21653594970703127" />
