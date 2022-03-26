@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CThatApp1">
         <activity
+            android:name=".ProtectionPeriod"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceProviderFees"
+            android:exported="false" />
+        <activity
+            android:name=".OtherFees"
+            android:exported="false" />
+        <activity
+            android:name=".ConstructionFees"
+            android:exported="false" />
+        <activity
             android:name=".LeaseFees"
             android:exported="false" />
         <activity

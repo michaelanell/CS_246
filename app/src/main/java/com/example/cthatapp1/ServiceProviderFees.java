@@ -6,16 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class LeaseFees extends AppCompatActivity {
+public class ServiceProviderFees extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lease_fees);
+        setContentView(R.layout.activity_service_provider_fees);
     }
 
-    public void getConstructionFees(View view) {
-        Intent intent = new Intent(this, ConstructionFees.class);
+    public void getOtherFees(View view) {
+        Intent intent = new Intent(this, OtherFees.class);
         startActivity(intent);
     }
 }

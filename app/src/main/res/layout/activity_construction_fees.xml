@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConstructionFees">
+
+    <Button
+        android:id="@+id/otherBrokerFeesNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="227dp"
+        android:onClick="getServiceProviderFees"
+        android:text="@string/other_fees_next_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/otherBrokerFeesInput"
+        app:layout_constraintTop_toBottomOf="@+id/otherBrokerFeesInput" />
+
+    <EditText
+        android:id="@+id/otherBrokerFeesInput"
+        android:layout_width="238dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/otherBrokerFeesNextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherBrokerFeesLabel" />
+
+    <TextView
+        android:id="@+id/otherBrokerFeesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/other_fees_title"
+        app:layout_constraintBottom_toTopOf="@+id/otherBrokerFeesLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/otherBrokerFeesLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="29dp"
+        android:labelFor="@id/otherBrokerFeesInput"
+        android:text="@string/other_fees"
+        app:layout_constraintBottom_toTopOf="@+id/otherBrokerFeesInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherBrokerFeesTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

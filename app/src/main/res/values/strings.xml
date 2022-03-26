@@ -83,11 +83,22 @@
     <string name="lease_agreed_percentage">Agreed Percentage:</string>
     <string name="lease_button">NEXT</string>
 
-    <string name="additional_fees_title">Additional Fees:</string>
-    <string name="construction_fees">Construction: If Client uses Broker’s services to procure or negotiate the construction of improvements to property that Client owns or may acquire, Client ensures that Broker will receive from Client or the contractor(s) at the time the construction is substantially complete a fee equal to:</string>
-    <string name="service_provider_fees">Service Providers: If Broker refers Client or any party to a transaction contemplated by this agreement to a service provider (for example, mover, cable company, telecommunications provider, utility, or contractor) Broker may receive a fee from the service provider for the referral</string>
-    <string name="other_fees">Other Broker Fees:</string>
+    <string name="construction_fees_title">Construction Fees</string>
+    <string name="construction_fees">If Client uses Broker’s services to procure or negotiate the construction of improvements to property that Client owns or may acquire, Client ensures that Broker will receive from Client or the contractor(s) at the time the construction is substantially complete a fee equal to:</string>
+
+    <string name="service_provider_fees_title">Service Provider Fees</string>
+    <string name="service_provider_fees">If Broker refers Client or any party to a transaction contemplated by this agreement to a service provider (for example, mover, cable company, telecommunications provider, utility, or contractor) Broker may receive a fee from the service provider for the referral</string>
+    <string name="service_providers_next">NEXT</string>
+
+    <string name="other_fees_title">Other Broker Fees</string>
+    <string name="other_fees">Other fees broker is entitled to from this transaction:</string>
+    <string name="other_fees_next_button">NEXT</string>
+
+
     <string name="protection_period">Protection Period</string>
+    <string name="protection_period_length">Protection Period Length:</string>
+    <string name="protection_period_next_button">NEXT</string>
+
     <string name="broker_county">County: Amounts payable to Broker are to be paid in cash in: </string>
 
     <string name="addenda_checklist_title">Addenda and Other Documents</string>
