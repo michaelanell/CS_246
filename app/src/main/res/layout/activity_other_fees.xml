@@ -7,45 +7,46 @@
     tools:context=".OtherFees">
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/otherFeesLabel"
+        android:layout_width="283dp"
+        android:layout_height="31dp"
         android:layout_marginStart="53dp"
         android:layout_marginEnd="53dp"
         android:layout_marginBottom="33dp"
+        android:labelFor="@id/otherFeesInput"
         android:text="@string/other_fees"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/otherFeesInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/otherFeesTitle" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/otherFeesInput"
         android:layout_width="237dp"
         android:layout_height="0dp"
         android:layout_marginBottom="54dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintBottom_toTopOf="@+id/otherFeesNextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/otherFeesLabel" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/otherFeesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="192dp"
         android:layout_marginBottom="56dp"
         android:text="@string/other_fees_title"
-        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintBottom_toTopOf="@+id/otherFeesLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/otherFeesNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="3dp"
@@ -53,7 +54,7 @@
         android:onClick="getProtectionPeriod"
         android:text="@string/other_fees_next_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintEnd_toEndOf="@+id/otherFeesInput"
+        app:layout_constraintTop_toBottomOf="@+id/otherFeesInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

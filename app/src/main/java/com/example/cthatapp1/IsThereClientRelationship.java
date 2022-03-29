@@ -8,6 +8,8 @@ import android.view.View;
 
 public class IsThereClientRelationship extends AppCompatActivity {
 
+    boolean clientRelationship;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

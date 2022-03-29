@@ -7,19 +7,19 @@
     tools:context=".LeaseFees">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/leaseFeesTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="143dp"
         android:layout_marginBottom="45dp"
         android:text="@string/lease_fees_title"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintBottom_toTopOf="@+id/leaseFeesLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/leaseFeesLabel"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="35dp"
@@ -29,7 +29,7 @@
         app:layout_constraintBottom_toTopOf="@+id/radioButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/leaseFeesTitle" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -40,10 +40,10 @@
         app:layout_constraintBottom_toTopOf="@+id/radioButton3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/leaseFeesLabel" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/leaseFeesNextButton"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginTop="28dp"
@@ -59,7 +59,7 @@
         android:layout_marginEnd="51dp"
         android:layout_marginBottom="41dp"
         android:text="@string/lease_fees_all_rents"
-        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintBottom_toTopOf="@+id/leaseFeesNextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioButton" />
 

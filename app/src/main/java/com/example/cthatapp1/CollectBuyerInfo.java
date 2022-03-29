@@ -8,6 +8,13 @@ import android.view.View;
 
 public class CollectBuyerInfo extends AppCompatActivity {
 
+    // instance variables
+    String buyerOneFirstName;
+    String buyerOneLastName;
+    String buyerOneEmail;
+    int buyerOnePhone;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

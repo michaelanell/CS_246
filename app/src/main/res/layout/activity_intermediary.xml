@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/intermediaryYes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
@@ -25,13 +25,13 @@
         android:layout_marginBottom="27dp"
         android:onClick="getSaleFees"
         android:text="@string/intermediary_status_yes"
-        app:layout_constraintBottom_toTopOf="@+id/button5"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
+        app:layout_constraintBottom_toTopOf="@+id/intermediaryNo"
+        app:layout_constraintEnd_toEndOf="@+id/intermediaryNo"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/intermediaryNo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="getSaleFees"
@@ -39,6 +39,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/intermediaryYes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

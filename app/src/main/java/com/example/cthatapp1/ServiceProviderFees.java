@@ -8,6 +8,8 @@ import android.view.View;
 
 public class ServiceProviderFees extends AppCompatActivity {
 
+    String serviceProviderFees;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

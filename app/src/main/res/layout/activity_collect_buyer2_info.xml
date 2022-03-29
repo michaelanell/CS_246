@@ -7,125 +7,103 @@
     tools:context=".CollectBuyer2Info">
 
     <TextView
-        android:id="@+id/buyer2Title"
+        android:id="@+id/buyerTwoTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="87dp"
         android:text="@string/parties_title_2"
-        app:layout_constraintStart_toStartOf="@+id/buyerTwoNameFirst"
+        app:layout_constraintStart_toStartOf="@+id/buyerTwoNameInput"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/buyerTwoPhoneLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="319dp"
-        android:layout_marginEnd="49dp"
-        android:labelFor="@id/buyerTwoPhone"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="37dp"
+        android:labelFor="@id/buyerTwoPhoneInput"
         android:text="@string/buyer_two_phone"
-        app:layout_constraintEnd_toStartOf="@+id/buyerTwoPhone"
+        app:layout_constraintEnd_toStartOf="@+id/buyerTwoPhoneInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/buyerTwoEmail"
+        android:id="@+id/buyerTwoEmailInput"
         android:layout_width="0dp"
         android:layout_height="62dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="73dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="82dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/buyerTwoNextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buyerTwoEmailLabel"
-        app:layout_constraintTop_toBottomOf="@+id/buyerTwoPhone" />
-
-    <TextView
-        android:id="@+id/buyerTwoNameLastLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="20dp"
-        android:labelFor="@id/buyerTwoNameFirstLabel"
-        android:text="@string/buyer_two_last_name"
-        app:layout_constraintEnd_toStartOf="@+id/buyerTwoNameLast"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buyerTwoNameLast" />
+        app:layout_constraintTop_toBottomOf="@+id/buyerTwoPhoneLabel" />
 
     <TextView
         android:id="@+id/buyerTwoEmailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="54dp"
-        android:labelFor="@id/buyerTwoEmail"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="42dp"
+        android:labelFor="@id/buyerTwoEmailInput"
         android:text="@string/buyer_two_email"
-        app:layout_constraintEnd_toStartOf="@+id/buyerTwoEmail"
+        app:layout_constraintEnd_toStartOf="@+id/buyerTwoEmailInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buyerTwoPhoneLabel" />
+        app:layout_constraintTop_toTopOf="@+id/buyerTwoEmailInput" />
 
     <EditText
-        android:id="@+id/buyerTwoNameFirst"
+        android:id="@+id/buyerTwoNameInput"
         android:layout_width="0dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="163dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="57dp"
         android:layout_marginEnd="76dp"
-        android:layout_marginBottom="164dp"
+        android:layout_marginBottom="53dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/buyerTwoEmailLabel"
+        app:layout_constraintBottom_toTopOf="@+id/buyerTwoPhoneInput"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buyerTwoNameFirstLabel"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/buyerTwoNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/buyerTwoTitle" />
 
     <TextView
-        android:id="@+id/buyerTwoNameFirstLabel"
+        android:id="@+id/buyerTwoNameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginEnd="15dp"
-        android:labelFor="@id/buyerTwoNameFirst"
-        android:text="@string/buyer_two_first_name"
-        app:layout_constraintEnd_toStartOf="@+id/buyerTwoNameFirst"
+        android:layout_marginTop="163dp"
+        android:layout_marginEnd="29dp"
+        android:labelFor="@id/buyerTwoNameInput"
+        android:text="@string/buyer_two_name"
+        app:layout_constraintEnd_toStartOf="@+id/buyerTwoNameInput"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/buyerTwoNameFirst" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/buyerTwoPhone"
+        android:id="@+id/buyerTwoPhoneInput"
         android:layout_width="0dp"
         android:layout_height="54dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="73dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="105dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="@+id/buyerTwoEmailInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buyerTwoPhoneLabel"
-        app:layout_constraintTop_toBottomOf="@+id/buyerTwoNameLast" />
-
-    <EditText
-        android:id="@+id/buyerTwoNameLast"
-        android:layout_width="0dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="76dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/buyerTwoNameLastLabel"
-        app:layout_constraintTop_toBottomOf="@+id/buyerTwoNameFirst" />
+        app:layout_constraintTop_toBottomOf="@+id/buyerTwoNameLabel" />
 
     <Button
-        android:id="@+id/buyerTwoButton"
+        android:id="@+id/buyerTwoNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="205dp"
         android:onClick="collectAddress"
         android:text="@string/buyer_two_button"
-        app:layout_constraintEnd_toEndOf="@+id/buyerTwoEmail"
-        app:layout_constraintTop_toBottomOf="@+id/buyerTwoEmail" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buyerTwoEmailInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>

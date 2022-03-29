@@ -24,26 +24,27 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="19dp"
         android:layout_marginBottom="40dp"
+        android:labelFor="@id/protectionPeriodInput"
         android:text="@string/protection_period_length"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3"
+        app:layout_constraintBottom_toTopOf="@+id/protectionPeriodInput"
+        app:layout_constraintEnd_toEndOf="@+id/protectionPeriodInput"
         app:layout_constraintTop_toBottomOf="@+id/protectionPeriodTitle" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/protectionPeriodInput"
         android:layout_width="209dp"
         android:layout_height="0dp"
         android:layout_marginBottom="38dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/button8"
+        app:layout_constraintBottom_toTopOf="@+id/protectionPeriodNextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/protectionPeriodLabel" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/protectionPeriodNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="122dp"
@@ -51,6 +52,6 @@
         android:onClick="getAddenda"
         android:text="@string/protection_period_next_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintStart_toStartOf="@+id/protectionPeriodInput"
+        app:layout_constraintTop_toBottomOf="@+id/protectionPeriodInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>

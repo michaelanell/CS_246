@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
         android:layout_marginBottom="17dp"
-        android:labelFor="@id/buyerStreetAddress"
+        android:labelFor="@id/buyerStreetAddressInput"
         android:text="@string/buyer_address_street_address"
-        app:layout_constraintBottom_toBottomOf="@+id/buyerStreetAddress"
-        app:layout_constraintEnd_toStartOf="@+id/buyerStreetAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/buyerStreetAddressInput"
+        app:layout_constraintEnd_toStartOf="@+id/buyerStreetAddressInput"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -24,67 +24,67 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
         android:layout_marginEnd="69dp"
-        android:labelFor="@id/buyerCity"
+        android:labelFor="@id/buyerCityInput"
         android:text="@string/buyer_address_city"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buyerCity"
-        app:layout_constraintEnd_toStartOf="@+id/buyerCity"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buyerCityInput"
+        app:layout_constraintEnd_toStartOf="@+id/buyerCityInput"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/buyerState"
+        android:id="@+id/buyerStateInput"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="43dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/buyerZipCode"
+        app:layout_constraintBottom_toTopOf="@+id/buyerZipCodeInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buyerStateLabel"
-        app:layout_constraintTop_toBottomOf="@+id/buyerCity" />
+        app:layout_constraintTop_toBottomOf="@+id/buyerCityInput" />
 
     <EditText
-        android:id="@+id/buyerCity"
+        android:id="@+id/buyerCityInput"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="36dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/buyerState"
+        app:layout_constraintBottom_toTopOf="@+id/buyerStateInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buyerCityLabel"
-        app:layout_constraintTop_toBottomOf="@+id/buyerStreetAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/buyerStreetAddressInput" />
 
     <EditText
-        android:id="@+id/buyerStreetAddress"
+        android:id="@+id/buyerStreetAddressInput"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="56dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/buyerCity"
+        app:layout_constraintBottom_toTopOf="@+id/buyerCityInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buyerStreetAddressLabel"
         app:layout_constraintTop_toBottomOf="@+id/buyerAddressTitle" />
 
     <EditText
-        android:id="@+id/buyerZipCode"
+        android:id="@+id/buyerZipCodeInput"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginEnd="45dp"
         android:layout_marginBottom="63dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buyerAddressNextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buyerZipCodeLabel"
-        app:layout_constraintTop_toBottomOf="@+id/buyerState" />
+        app:layout_constraintTop_toBottomOf="@+id/buyerStateInput" />
 
     <TextView
         android:id="@+id/buyerStateLabel"
@@ -92,10 +92,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
         android:layout_marginEnd="60dp"
-        android:labelFor="@id/buyerState"
+        android:labelFor="@id/buyerStateInput"
         android:text="@string/buyer_address_state"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buyerState"
-        app:layout_constraintEnd_toStartOf="@+id/buyerState"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buyerStateInput"
+        app:layout_constraintEnd_toStartOf="@+id/buyerStateInput"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -104,10 +104,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="46dp"
         android:layout_marginEnd="37dp"
-        android:labelFor="@id/buyerZipCode"
+        android:labelFor="@id/buyerZipCodeInput"
         android:text="@string/buyer_address_zip"
-        app:layout_constraintBaseline_toBaselineOf="@+id/buyerZipCode"
-        app:layout_constraintEnd_toStartOf="@+id/buyerZipCode"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buyerZipCodeInput"
+        app:layout_constraintEnd_toStartOf="@+id/buyerZipCodeInput"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -117,13 +117,13 @@
         android:layout_marginTop="75dp"
         android:layout_marginBottom="69dp"
         android:text="@string/buyer_address_title"
-        app:layout_constraintBottom_toTopOf="@+id/buyerStreetAddress"
+        app:layout_constraintBottom_toTopOf="@+id/buyerStreetAddressInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buyerAddressNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="61dp"
@@ -132,5 +132,5 @@
         android:text="@string/buyer_next_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buyerZipCode" />
+        app:layout_constraintTop_toBottomOf="@+id/buyerZipCodeInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>

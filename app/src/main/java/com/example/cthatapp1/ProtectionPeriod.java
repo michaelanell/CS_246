@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class ProtectionPeriod extends AppCompatActivity {
+    String protectionPeriod;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

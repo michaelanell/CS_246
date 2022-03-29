@@ -63,7 +63,7 @@
         app:layout_constraintTop_toBottomOf="@+id/countyCollin" />
 
     <EditText
-        android:id="@+id/countyOther"
+        android:id="@+id/countyOtherInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="71dp"
@@ -79,20 +79,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:labelFor="@id/countyOther"
+        android:labelFor="@id/countyOtherInput"
         android:text="@string/county_other"
         app:layout_constraintStart_toStartOf="@+id/countyRockwall"
         app:layout_constraintTop_toBottomOf="@+id/countyRockwall" />
 
     <Button
-        android:id="@+id/marketAreaButton"
+        android:id="@+id/marketAreaNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="11dp"
         android:onClick="getTermLength"
         android:text="@string/county_next_button"
-        app:layout_constraintEnd_toEndOf="@+id/countyOther"
-        app:layout_constraintTop_toBottomOf="@+id/countyOther" />
+        app:layout_constraintEnd_toEndOf="@+id/countyOtherInput"
+        app:layout_constraintTop_toBottomOf="@+id/countyOtherInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

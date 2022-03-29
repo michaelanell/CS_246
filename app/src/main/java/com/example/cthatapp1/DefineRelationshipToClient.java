@@ -8,6 +8,7 @@ import android.view.View;
 
 public class DefineRelationshipToClient extends AppCompatActivity {
 
+    String clientRelationship;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

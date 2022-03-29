@@ -8,10 +8,18 @@ import android.view.View;
 
 public class CollectAgentInfo extends AppCompatActivity {
 
+    // instance variables
+    String agentFirstName;
+    String agentLastName;
+    String agentEmail;
+    int agentLicenseNumber;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.collect_agent_info);
+        setContentView(R.layout.activity_collect_agent_info);
     }
 
     /** Called when user clicks Next button **/

@@ -8,6 +8,9 @@ import android.view.View;
 
 public class SpecialInstructions extends AppCompatActivity {
 
+    //instance variables
+    String specialInstructions;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

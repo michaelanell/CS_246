@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 public class DueBy extends AppCompatActivity {
+    int dueDate;
+    int dueTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

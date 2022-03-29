@@ -14,7 +14,7 @@
         android:layout_marginEnd="49dp"
         android:layout_marginBottom="51dp"
         android:text="@string/service_provider_fees"
-        app:layout_constraintBottom_toTopOf="@+id/serviceProvider"
+        app:layout_constraintBottom_toTopOf="@+id/serviceProviderInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/serviceProviderFeesTitle" />
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/serviceProviderNext"
+        android:id="@+id/serviceProviderNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="222dp"
@@ -43,16 +43,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/serviceProvider" />
+        app:layout_constraintTop_toBottomOf="@+id/serviceProviderInput" />
 
     <EditText
-        android:id="@+id/serviceProvider"
+        android:id="@+id/serviceProviderInput"
         android:layout_width="216dp"
         android:layout_height="57dp"
         android:layout_marginBottom="42dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/serviceProviderNext"
+        app:layout_constraintBottom_toTopOf="@+id/serviceProviderNextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/serviceProviderLabel" />

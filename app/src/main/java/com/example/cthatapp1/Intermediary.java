@@ -8,6 +8,8 @@ import android.view.View;
 
 public class Intermediary extends AppCompatActivity {
 
+    boolean intermediary;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -8,6 +8,9 @@ import android.view.View;
 
 public class CollectBrokerageInfo extends AppCompatActivity {
 
+    String brokerName;
+    int brokerLicenseNumber;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

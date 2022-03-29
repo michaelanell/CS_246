@@ -8,6 +8,11 @@ import android.view.View;
 
 public class CollectBuyerAddress extends AppCompatActivity {
 
+    String streetAddress;
+    String city;
+    String state;
+    int zipcode;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

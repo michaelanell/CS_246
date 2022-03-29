@@ -2,8 +2,7 @@
     <string name="app_name">CThat App 1</string>
     <string name="start_button">Start</string>
     <string name="gai_section_1_title">REQUEST FROM: (Your Details)</string>
-    <string name="agent_name_first">First Name:</string>
-    <string name="agent_name_last">Last Name:</string>
+    <string name="agent_name">Name:</string>
     <string name="agent_email">Email:</string>
     <string name="agent_license_number">License Number:</string>
 
@@ -22,15 +21,13 @@
     <string name="number_of_parties">Number of Buyers:</string>
     <string name="one_buyer">1</string>
     <string name="two_buyers">2</string>
-    <string name="buyer_one_first_name">First Name:</string>
-    <string name="buyer_one_last_name">Last Name:</string>
+    <string name="buyer_one_name">Name:</string>
     <string name="buyer_one_email">Email:</string>
     <string name="buyer_one_phone">Phone:</string>
     <string name="buyer_add_buyer">Add Buyer</string>
     <string name="buyer_one_button">NEXT</string>
 
-    <string name="buyer_two_first_name">First Name:</string>
-    <string name="buyer_two_last_name">Last Name:</string>
+    <string name="buyer_two_name">Name:</string>
     <string name="buyer_two_email">Email:</string>
     <string name="buyer_two_phone">Phone:</string>
     <string name="buyer_two_button">NEXT</string>

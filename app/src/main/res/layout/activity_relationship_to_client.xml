@@ -6,42 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".RelationshipToClient">
 
-    <RadioButton
-        android:id="@+id/clientRelationshipNo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="37dp"
-        android:onClick="getMartekArea"
-        android:text="@string/agent_client_relationship_yes"
-        app:layout_constraintBottom_toTopOf="@+id/clientRelationshipYes"
-        app:layout_constraintEnd_toEndOf="@+id/clientRelationshipYes"
-        app:layout_constraintStart_toStartOf="@+id/clientRelationshipYes"
-        app:layout_constraintTop_toBottomOf="@+id/clientRelationshipLabel" />
-
-    <RadioButton
-        android:id="@+id/clientRelationshipYes"
-        android:layout_width="168dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="109dp"
-        android:layout_marginBottom="264dp"
-        android:onClick="defineRelationship"
-        android:text="@string/agent_client_relationship_no"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clientRelationshipNo" />
-
     <TextView
         android:id="@+id/clientRelationshipLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
         android:layout_marginTop="221dp"
-        android:layout_marginBottom="36dp"
         android:text="@string/agent_related_to_buyer"
-        app:layout_constraintBottom_toTopOf="@+id/clientRelationshipNo"
-        app:layout_constraintStart_toStartOf="@+id/clientRelationshipNo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clientRelationshipYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/agent_client_relationship_yes"
+        app:layout_constraintStart_toStartOf="@+id/clientRelationshipLabel"
+        app:layout_constraintTop_toBottomOf="@+id/clientRelationshipLabel" />
+
+    <Button
+        android:id="@+id/clientRelationshipNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="@string/agent_client_relationship_no"
+        app:layout_constraintStart_toStartOf="@+id/clientRelationshipYes"
+        app:layout_constraintTop_toBottomOf="@+id/clientRelationshipYes" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
