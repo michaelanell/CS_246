@@ -16,8 +16,8 @@
     <string name="request_due_time">Time:</string>
     <string name="request_due_button">NEXT</string>
 
-    <string name="parties_title">Parties:</string>
-    <string name="parties_title_2">Parties: Buyer Two</string>
+    <string name="parties_title">Buyer Information:</string>
+    <string name="parties_title_2">Buyer Two Information:</string>
     <string name="number_of_parties">Number of Buyers:</string>
     <string name="one_buyer">1</string>
     <string name="two_buyers">2</string>
@@ -82,6 +82,7 @@
 
     <string name="construction_fees_title">Construction Fees</string>
     <string name="construction_fees">If Client uses Broker’s services to procure or negotiate the construction of improvements to property that Client owns or may acquire, Client ensures that Broker will receive from Client or the contractor(s) at the time the construction is substantially complete a fee equal to:</string>
+    <string name="construction_fees_next_button">NEXT</string>
 
     <string name="service_provider_fees_title">Service Provider Fees</string>
     <string name="service_provider_fees">If Broker refers Client or any party to a transaction contemplated by this agreement to a service provider (for example, mover, cable company, telecommunications provider, utility, or contractor) Broker may receive a fee from the service provider for the referral</string>

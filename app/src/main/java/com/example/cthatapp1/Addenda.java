@@ -8,6 +8,9 @@ import android.view.View;
 
 public class Addenda extends AppCompatActivity {
 
+    // instance variables
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -16,12 +16,14 @@ public class IsThereClientRelationship extends AppCompatActivity {
         setContentView(R.layout.activity_is_there_client_relationship);
     }
 
-    public void DefineClientRelationship(View view) {
+    public void clientRelationshipYes(View view) {
+        clientRelationship = true;
         Intent intent = new Intent(this, DefineRelationshipToClient.class);
         startActivity(intent);
     }
 
-    public void getMarketArea(View view){
+    public void clientRelationshipNo(View view){
+        clientRelationship = false;
         Intent intent = new Intent(this, GetMarketArea.class);
         startActivity(intent);
     }

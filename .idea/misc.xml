@@ -10,7 +10,7 @@
         <entry key="app/src/main/res/layout/activity_collect_buyer2_info.xml" value="0.28535919189453113" />
         <entry key="app/src/main/res/layout/activity_collect_buyer_address.xml" value="0.24072265625000003" />
         <entry key="app/src/main/res/layout/activity_collect_buyer_info.xml" value="0.2671417236328126" />
-        <entry key="app/src/main/res/layout/activity_construction_fees.xml" value="0.17310333251953114" />
+        <entry key="app/src/main/res/layout/activity_construction_fees.xml" value="0.30722961425781237" />
         <entry key="app/src/main/res/layout/activity_define_relationship_to_client.xml" value="0.24361572265624998" />
         <entry key="app/src/main/res/layout/activity_due_by.xml" value="0.17536926269531244" />
         <entry key="app/src/main/res/layout/activity_dueby.xml" value="0.23852386474609377" />
@@ -19,9 +19,9 @@
         <entry key="app/src/main/res/layout/activity_intemediary_status.xml" value="0.21942901611328122" />
         <entry key="app/src/main/res/layout/activity_intermediary.xml" value="0.25002746582031243" />
         <entry key="app/src/main/res/layout/activity_is_there_client_relationship.xml" value="0.28069305419921864" />
-        <entry key="app/src/main/res/layout/activity_lease_fees.xml" value="0.16376495361328128" />
+        <entry key="app/src/main/res/layout/activity_lease_fees.xml" value="0.26039428710937507" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21653594970703127" />
-        <entry key="app/src/main/res/layout/activity_other_fees.xml" value="0.3418670654296875" />
+        <entry key="app/src/main/res/layout/activity_other_fees.xml" value="0.31108398437499996" />
         <entry key="app/src/main/res/layout/activity_protection_period.xml" value="0.2781021118164063" />
         <entry key="app/src/main/res/layout/activity_relationship_to_client.xml" value="0.3155487060546875" />
         <entry key="app/src/main/res/layout/activity_representations.xml" value="0.29349365234375" />

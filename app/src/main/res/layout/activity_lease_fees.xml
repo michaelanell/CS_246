@@ -11,56 +11,77 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="143dp"
-        android:layout_marginBottom="45dp"
+        android:layout_marginBottom="25dp"
         android:text="@string/lease_fees_title"
         app:layout_constraintBottom_toTopOf="@+id/leaseFeesLabel"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/leaseFeesLabel"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="46dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="64dp"
         android:text="@string/lease_fees__radio_label"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton"
+        app:layout_constraintBottom_toTopOf="@+id/leaseFeesRadio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/leaseFeesTitle" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="183dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="41dp"
-        android:text="@string/lease_fees_lease_one_rent"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/leaseFeesLabel" />
-
     <Button
         android:id="@+id/leaseFeesNextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginTop="28dp"
+        android:layout_width="105dp"
+        android:layout_height="58dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="216dp"
         android:onClick="getConstructionFees"
         android:text="@string/lease_button"
-        app:layout_constraintEnd_toEndOf="@+id/radioButton3"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton3" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaseFeesRadio" />
 
-    <RadioButton
-        android:id="@+id/radioButton3"
-        android:layout_width="246dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="41dp"
-        android:text="@string/lease_fees_all_rents"
+    <RadioGroup
+        android:id="@+id/leaseFeesRadio"
+        android:layout_width="292dp"
+        android:layout_height="119dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toTopOf="@+id/leaseFeesNextButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/leaseFeesLabel">
+
+        <RadioButton
+            android:id="@+id/allRentsRadio"
+            android:layout_width="246dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="114dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="41dp"
+            android:text="@string/lease_fees_all_rents"
+            android:onClick="onRadioButtonClicked"
+            app:layout_constraintBottom_toTopOf="@+id/leaseFeesNextButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+        <RadioButton
+            android:id="@+id/oneMonthRent"
+            android:layout_width="183dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="41dp"
+            android:text="@string/lease_fees_lease_one_rent"
+            android:onClick="onRadioButtonClicked"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/leaseFeesLabel" />
+    </RadioGroup>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

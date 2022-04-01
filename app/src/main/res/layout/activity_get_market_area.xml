@@ -11,88 +11,93 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
-        android:layout_marginBottom="18dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/define_market_area"
         app:layout_constraintBottom_toTopOf="@+id/countyCollin"
         app:layout_constraintStart_toEndOf="@+id/countyCollin" />
 
     <CheckBox
-        android:id="@+id/countyCollin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="73dp"
-        android:layout_marginTop="193dp"
-        android:text="@string/county_collin"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
         android:id="@+id/countyRockwall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="8dp"
         android:text="@string/county_rockwall"
         app:layout_constraintStart_toStartOf="@+id/countyTarrant"
-        app:layout_constraintTop_toBottomOf="@+id/countyTarrant" />
+        app:layout_constraintTop_toBottomOf="@+id/countyTarrant"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:id="@+id/countyDenton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="12dp"
         android:text="@string/county_denton"
         app:layout_constraintStart_toStartOf="@+id/countyDallas"
-        app:layout_constraintTop_toBottomOf="@+id/countyDallas" />
+        app:layout_constraintTop_toBottomOf="@+id/countyDallas"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:id="@+id/countyTarrant"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="12dp"
         android:text="@string/county_tarrant"
         app:layout_constraintStart_toStartOf="@+id/countyDenton"
-        app:layout_constraintTop_toBottomOf="@+id/countyDenton" />
-
-    <CheckBox
-        android:id="@+id/countyDallas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="@string/county_dallas"
-        app:layout_constraintStart_toStartOf="@+id/countyCollin"
-        app:layout_constraintTop_toBottomOf="@+id/countyCollin" />
-
-    <EditText
-        android:id="@+id/countyOtherInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="71dp"
-        android:layout_marginTop="15dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/countyRockwall"
-        app:layout_constraintTop_toBottomOf="@+id/countyRockwall" />
+        app:layout_constraintTop_toBottomOf="@+id/countyDenton"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:id="@+id/countyOtherLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="8dp"
         android:labelFor="@id/countyOtherInput"
         android:text="@string/county_other"
         app:layout_constraintStart_toStartOf="@+id/countyRockwall"
         app:layout_constraintTop_toBottomOf="@+id/countyRockwall" />
 
+    <CheckBox
+        android:id="@+id/countyDallas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/county_dallas"
+        app:layout_constraintStart_toStartOf="@+id/countyCollin"
+        app:layout_constraintTop_toBottomOf="@+id/countyCollin"
+        android:onClick="onCheckboxClicked"/>
+
     <Button
         android:id="@+id/marketAreaNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="11dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="144dp"
         android:onClick="getTermLength"
         android:text="@string/county_next_button"
-        app:layout_constraintEnd_toEndOf="@+id/countyOtherInput"
-        app:layout_constraintTop_toBottomOf="@+id/countyOtherInput" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/countyOtherInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/countyRockwall"
+        app:layout_constraintTop_toBottomOf="@+id/countyRockwall" />
+
+    <CheckBox
+        android:id="@+id/countyCollin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="130dp"
+        android:text="@string/county_collin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onCheckboxClicked" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

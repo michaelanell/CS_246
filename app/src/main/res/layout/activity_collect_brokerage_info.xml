@@ -12,7 +12,7 @@
         android:layout_height="58dp"
         android:layout_marginBottom="47dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/brokerageLicenseNoLabel"
         app:layout_constraintEnd_toEndOf="@+id/brokerageLicenseNoInput"
@@ -56,7 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="39dp"
         android:layout_marginEnd="77dp"
-        android:onClick="collectDueByInfo"
+        android:onClick="collectBuyerInfo"
         android:text="Next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/brokerageLicenseNoInput" />

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 public class SpecialInstructions extends AppCompatActivity {
 
@@ -20,6 +21,9 @@ public class SpecialInstructions extends AppCompatActivity {
     public void displayEntry(View view) {
         Intent intent = new Intent(this, DisplayEntry.class);
         startActivity(intent);
+
+        EditText editSpecialInstructions = (EditText) findViewById(R.id.specialInstructionsInput);
+        specialInstructions = editSpecialInstructions.getText().toString();
     }
 
 }

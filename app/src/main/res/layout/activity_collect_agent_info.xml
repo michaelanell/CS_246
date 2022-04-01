@@ -4,74 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CollectAgentInfo">
+    tools:context=".CollectAgentInfo"
+    tools:layout_editor_absoluteX="-4dp"
+    tools:layout_editor_absoluteY="0dp">
 
     <EditText
-        android:id="@+id/agentFirstName"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="62dp"
+        android:id="@+id/agentNameInput"
+        android:layout_width="221dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="36dp"
         android:ems="10"
-        android:hint="@string/agent_name"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/agentEmail"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/section1Title" />
 
-    <EditText
-        android:id="@+id/agentEmail"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="29dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginBottom="60dp"
-        android:ems="10"
-        android:hint="@string/agent_email"
-        app:layout_constraintBottom_toTopOf="@+id/agentLicenseNum"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agentFirstName" />
+    <TextView
+        android:id="@+id/agentLicenseNumLabel"
+        android:layout_width="129dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:labelFor="@id/agentLicenseNumInput"
+        android:text="@string/agent_license_number"
+        app:layout_constraintEnd_toStartOf="@+id/agentLicenseNumInput"
+        app:layout_constraintTop_toTopOf="@+id/agentLicenseNumInput" />
 
-    <Button
-        android:id="@+id/action2"
+    <EditText
+        android:id="@+id/agentEmailInput"
+        android:layout_width="231dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agentNameInput" />
+
+    <TextView
+        android:id="@+id/agentEmailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="127dp"
-        android:onClick="collectBrokerageInfo"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="84dp"
+        android:labelFor="@id/agentEmailInput"
+        android:text="@string/agent_email"
+        app:layout_constraintEnd_toStartOf="@+id/agentEmailInput"
+        app:layout_constraintTop_toTopOf="@+id/agentEmailInput" />
+
+    <EditText
+        android:id="@+id/agentLicenseNumInput"
+        android:layout_width="232dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="97dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/agentNextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/agentNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="314dp"
+        android:labelFor="@id/agentNameInput"
+        android:text="@string/agent_name"
+        app:layout_constraintEnd_toEndOf="@+id/agentNameInput"
+        app:layout_constraintTop_toTopOf="@+id/agentNameInput" />
+
+    <Button
+        android:id="@+id/agentNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="89dp"
+        android:onClick="nextButton"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agentLicenseNum" />
-
-    <EditText
-        android:id="@+id/agentLicenseNum"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="50dp"
-        android:ems="10"
-        android:hint="@string/agent_license_number"
-        android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/action2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/agentEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/agentLicenseNumInput" />
 
     <TextView
         android:id="@+id/section1Title"
-        android:layout_width="212dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="58dp"
-        android:layout_marginBottom="45dp"
+        android:layout_width="202dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="140dp"
         android:labelFor="@+id/section1Title"
         android:text="@string/gai_section_1_title"
-        app:layout_constraintBottom_toTopOf="@+id/agentFirstName"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

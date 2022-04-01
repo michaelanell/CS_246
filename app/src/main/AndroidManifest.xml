@@ -79,9 +79,6 @@
             android:name=".CollectBrokerageInfo"
             android:exported="false" />
         <activity
-            android:name=".DueBy"
-            android:exported="false" />
-        <activity
             android:name=".CollectAgentInfo"
             android:parentActivityName=".MainActivity" />
         <activity

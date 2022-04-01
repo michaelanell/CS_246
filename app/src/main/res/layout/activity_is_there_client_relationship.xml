@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="23dp"
-        android:onClick="getMarketArea"
+        android:onClick="clientRelationshipNo"
         android:text="@string/agent_client_relationship_no"
         app:layout_constraintStart_toStartOf="@+id/clientRelationshipExists"
         app:layout_constraintTop_toBottomOf="@+id/clientRelationshipExists" />
@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
-        android:onClick="DefineClientRelationship"
+        android:onClick="clientRelationshipYes"
         android:text="@string/agent_client_relationship_yes"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
