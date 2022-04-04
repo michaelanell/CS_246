@@ -11,18 +11,29 @@ public class SpecialProvisions extends AppCompatActivity {
 
     // instance variables
     String specialProvisions;
+    EditText specialProvisionsInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_special_provisions);
+
+        //Collect User Input
+        specialProvisionsInput = (EditText) findViewById(R.id.specialProvisionsInput);
     }
 
-    public void getSpecialInstructions(View view) {
+    private void setSpecialProvisions() {
+        specialProvisions = specialProvisionsInput.getText().toString();
+
+    }
+
+    public void nextButton(View view) {
+        /** Set instance variables to user input **/
+        setSpecialProvisions();
+
+        /** Get Special Instructions **/
         Intent intent = new Intent(this, SpecialInstructions.class);
         startActivity(intent);
-
-        EditText editSpecialProvisions = (EditText) findViewById(R.id.specialProvisionsInput);
-        specialProvisions = editSpecialProvisions.getText().toString();
     }
+
 }

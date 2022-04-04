@@ -70,9 +70,9 @@
         android:id="@+id/marketAreaNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="144dp"
-        android:onClick="getTermLength"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="nextButton"
         android:text="@string/county_next_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -85,7 +85,6 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintStart_toStartOf="@+id/countyRockwall"
         app:layout_constraintTop_toBottomOf="@+id/countyRockwall" />
 

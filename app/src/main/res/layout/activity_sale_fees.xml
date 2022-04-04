@@ -7,11 +7,11 @@
     tools:context=".SaleFees">
 
     <EditText
-        android:id="@+id/salePercentage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="22dp"
+        android:id="@+id/salePercentageInput"
+        android:layout_width="228dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="12dp"
         android:ems="10"
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="@+id/salePercentageLabel"
@@ -32,18 +32,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:layout_marginEnd="97dp"
-        android:onClick="getLeaseFees"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="nextButton"
         android:text="@string/sale_fees_button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/salePercentage" />
+        app:layout_constraintTop_toBottomOf="@+id/salePercentageInput" />
 
     <TextView
         android:id="@+id/salePercentageLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="300dp"
-        android:labelFor="@id/salePercentage"
+        android:labelFor="@id/salePercentageInput"
         android:text="@string/sale_fees_sale"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

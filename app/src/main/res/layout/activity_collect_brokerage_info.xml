@@ -6,70 +6,73 @@
     android:layout_height="match_parent"
     tools:context=".CollectBrokerageInfo">
 
-    <EditText
-        android:id="@+id/brokerageNameInput"
-        android:layout_width="213dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="47dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/brokerageLicenseNoLabel"
-        app:layout_constraintEnd_toEndOf="@+id/brokerageLicenseNoInput"
-        app:layout_constraintStart_toStartOf="@+id/brokerageLicenseNoInput" />
+    <TextView
+        android:id="@+id/brokerageNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="34dp"
+        android:labelFor="@id/brokerageNameInput"
+        android:text="@string/agent_brokerage_name"
+        app:layout_constraintEnd_toStartOf="@+id/brokerageNameInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/brokerageTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="61dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="87dp"
         android:text="@string/agent_brokerage_title"
-        app:layout_constraintBottom_toTopOf="@+id/brokerageNameLabel"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/brokerageNameInput"
+        app:layout_constraintStart_toEndOf="@+id/brokerageNameLabel" />
 
     <TextView
         android:id="@+id/brokerageLicenseNoLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="14dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="34dp"
         android:labelFor="@id/brokerageLicenseNoInput"
         android:text="@string/agent_brokerage_license_number"
-        app:layout_constraintBottom_toTopOf="@+id/brokerageLicenseNoInput"
-        app:layout_constraintStart_toStartOf="@+id/brokerageLicenseNoInput" />
+        app:layout_constraintEnd_toStartOf="@+id/brokerageLicenseNoInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brokerageNameInput" />
 
-    <TextView
-        android:id="@+id/brokerageNameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:layout_marginBottom="20dp"
-        android:labelFor="@id/brokerageNameInput"
-        android:text="@string/agent_brokerage_name"
-        app:layout_constraintBottom_toTopOf="@+id/brokerageNameInput"
-        app:layout_constraintStart_toStartOf="@+id/brokerageNameInput" />
+    <EditText
+        android:id="@+id/brokerageNameInput"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brokerageNameLabel"
+        app:layout_constraintTop_toTopOf="@+id/brokerageNameLabel" />
+
+    <EditText
+        android:id="@+id/brokerageLicenseNoInput"
+        android:layout_width="0dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="34dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brokerageLicenseNoLabel"
+        app:layout_constraintTop_toTopOf="@+id/brokerageLicenseNoLabel" />
 
     <Button
         android:id="@+id/brokerageNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="39dp"
-        android:layout_marginEnd="77dp"
-        android:onClick="collectBuyerInfo"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="80dp"
+        android:onClick="nextButton"
         android:text="Next"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/brokerageLicenseNoInput" />
-
-    <EditText
-        android:id="@+id/brokerageLicenseNoInput"
-        android:layout_width="220dp"
-        android:layout_height="65dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="287dp"
-        android:ems="10"
-        android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/brokerageNextButton" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

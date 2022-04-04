@@ -7,8 +7,8 @@
     <string name="agent_license_number">License Number:</string>
 
     <string name="agent_brokerage_title">Brokerage Information:</string>
-    <string name="agent_brokerage_name">Brokerages Printed Name:</string>
-    <string name="agent_brokerage_license_number">Brokers License Number:</string>
+    <string name="agent_brokerage_name">Brokerage Name:</string>
+    <string name="agent_brokerage_license_number">License Number:</string>
     <string name="agent_brokerage_button">NEXT</string>
 
     <string name="due_by_title">DUE BY:</string>

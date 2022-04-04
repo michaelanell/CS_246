@@ -21,25 +21,27 @@
     <EditText
         android:id="@+id/representationsInput"
         android:layout_width="214dp"
-        android:layout_height="58dp"
-        android:layout_marginBottom="67dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="43dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/representationsNextButton"
-        app:layout_constraintStart_toStartOf="@+id/representationsExplanation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/representationsExplanation" />
 
     <TextView
         android:id="@+id/representationsExplanation"
-        android:layout_width="272dp"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginStart="68dp"
         android:layout_marginEnd="68dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="41dp"
         android:labelFor="@id/representationsInput"
         android:text="@string/representations_explanation"
         app:layout_constraintBottom_toTopOf="@+id/representationsInput"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/representationsTitle" />
 
     <Button
@@ -48,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="69dp"
         android:layout_marginBottom="246dp"
-        android:onClick="getIntermediaryStatus"
+        android:onClick="nextButton"
         android:text="@string/representations_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

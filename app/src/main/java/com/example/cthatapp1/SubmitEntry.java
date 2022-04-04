@@ -2,44 +2,50 @@ package com.example.cthatapp1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.net.Uri;
+import android.widget.Button;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
-public class DisplayEntry extends AppCompatActivity {
+
+public class SubmitEntry extends AppCompatActivity {
     private static final String FILE_NAME = "request.txt";
-
+    Button button;
+    TextView viewEntry;
     String data;
     TextView displayData;
-    Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_display_entry);
+        setContentView(R.layout.activity_submit_entry);
 
+        viewEntry = findViewById(R.id.viewEntry);
+
+        button = findViewById(R.id.submitButton);
         displayData = findViewById(R.id.dataView);
-        button = findViewById(R.id.submitButton2);
+
         setDisplay();
 
-        button.setOnClickListener(new View.OnClickListener() {
+        button.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View view)
             {
                 String emailsend = "michaela@simplifysmallbiz.com";
                 String emailsubject = "REQUEST For Buyer Representation Agreement";
-                String emailbody = displayData.getText().toString();
+                String emailbody = viewEntry.getText().toString();
 
                 // define Intent object
                 // with action attribute as ACTION_SEND
@@ -62,6 +68,7 @@ public class DisplayEntry extends AppCompatActivity {
                                         "Choose an Email client :"));
             }
         });
+
     }
 
     public void setDisplay() {
@@ -77,7 +84,7 @@ public class DisplayEntry extends AppCompatActivity {
             while ((text = br.readLine()) != null) {
                 sb.append(text).append("\n");
             }
-            displayData.setText(sb.toString());
+            viewEntry.setText(sb.toString());
 
 
         } catch (FileNotFoundException e) {

@@ -10,19 +10,44 @@ import android.widget.EditText;
 public class ServiceProviderFees extends AppCompatActivity {
 
     String serviceProviderFees;
+    EditText serviceProviderFeesInput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_service_provider_fees);
+
+        serviceProviderFeesInput = (EditText) findViewById(R.id.serviceProviderInput);
+
+    }
+
+    private void setServiceProviderFees() {
+        serviceProviderFees = serviceProviderFeesInput.getText().toString();
+    }
+
+    /** Validation methods **/
+    private boolean validateServiceProviderFees() {
+        if (serviceProviderFees.isEmpty()) {
+            serviceProviderFeesInput.setError("Field cannot be empty");
+            return false;
+        }
+        else {
+            serviceProviderFeesInput.setError(null);
+            return true;
+        }
     }
 
     public void getOtherFees(View view) {
-        Intent intent = new Intent(this, OtherFees.class);
+        /** Set instance variables to user input **/
+        setServiceProviderFees();
+
+        /** Validate user input **/
+        if (!validateServiceProviderFees()) {
+            return;
+        }
+
+        /** Collect Broker Info **/
+        Intent intent = new Intent(this, ProtectionPeriod.class);
         startActivity(intent);
-
-        EditText editServiceProviderFees = (EditText) findViewById(R.id.serviceProviderInput);
-
-        serviceProviderFees = editServiceProviderFees.getText().toString();
     }
 }

@@ -73,7 +73,6 @@
         android:layout_marginEnd="54dp"
         android:layout_marginBottom="119dp"
         android:ems="10"
-        android:text="Name"
         app:layout_constraintBottom_toTopOf="@+id/buyerOneEmailInput"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/buyerOneNameFirstLabel"

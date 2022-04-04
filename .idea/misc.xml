@@ -12,6 +12,7 @@
         <entry key="app/src/main/res/layout/activity_collect_buyer_info.xml" value="0.2671417236328126" />
         <entry key="app/src/main/res/layout/activity_construction_fees.xml" value="0.30722961425781237" />
         <entry key="app/src/main/res/layout/activity_define_relationship_to_client.xml" value="0.24361572265624998" />
+        <entry key="app/src/main/res/layout/activity_display_entry.xml" value="0.16814575195312498" />
         <entry key="app/src/main/res/layout/activity_due_by.xml" value="0.17536926269531244" />
         <entry key="app/src/main/res/layout/activity_dueby.xml" value="0.23852386474609377" />
         <entry key="app/src/main/res/layout/activity_fees.xml" value="0.19718933105468742" />
@@ -29,6 +30,7 @@
         <entry key="app/src/main/res/layout/activity_service_provider_fees.xml" value="0.2786453247070312" />
         <entry key="app/src/main/res/layout/activity_special_instructions.xml" value="0.31991271972656254" />
         <entry key="app/src/main/res/layout/activity_special_provisions.xml" value="0.1753692626953125" />
+        <entry key="app/src/main/res/layout/activity_submit_entry.xml" value="0.27186431884765616" />
         <entry key="app/src/main/res/layout/activity_term_length.xml" value="0.23701934814453124" />
         <entry key="app/src/main/res/layout/collect_agent_info.xml" value="0.19454803466796877" />
         <entry key="app/src/main/res/layout/collect_brokerage_info.xml" value="0.21653594970703127" />

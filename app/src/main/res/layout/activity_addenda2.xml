@@ -11,43 +11,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="127dp"
-        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="1dp"
         android:text="@string/addenda_checklist_title"
-        app:layout_constraintBottom_toTopOf="@+id/addenda2Label"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/addendaLead"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/addenda2NextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="51dp"
-        android:layout_marginBottom="168dp"
+        android:onClick="nextButton"
         android:text="@string/addenda2_checklist_next_button"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/addendaOtherLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/addendaOtherInput" />
 
     <TextView
         android:id="@+id/addenda2Label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginTop="21dp"
         android:text="@string/addenda_checklist"
-        app:layout_constraintBottom_toTopOf="@+id/addendaLead"
         app:layout_constraintStart_toStartOf="@+id/addenda2Title"
         app:layout_constraintTop_toBottomOf="@+id/addenda2Title" />
 
     <CheckBox
         android:id="@+id/addendaLead"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="37dp"
         android:text="@string/addenda_lead"
-        app:layout_constraintBottom_toTopOf="@+id/addendaHazard"
-        app:layout_constraintEnd_toEndOf="@+id/addenda2Title"
         app:layout_constraintStart_toStartOf="@+id/addendaHazard"
         app:layout_constraintTop_toBottomOf="@+id/addenda2Label" />
 
@@ -55,10 +50,9 @@
         android:id="@+id/addendaHazard"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="29dp"
         android:text="@string/addenda_hazard"
-        app:layout_constraintBottom_toTopOf="@+id/addendaInspection"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addendaLead" />
 
@@ -67,9 +61,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginTop="22dp"
         android:text="@string/addenda_inspection"
-        app:layout_constraintBottom_toTopOf="@+id/addendaOtherLabel"
         app:layout_constraintStart_toStartOf="@+id/addendaHazard"
         app:layout_constraintTop_toBottomOf="@+id/addendaHazard" />
 
@@ -78,10 +71,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="59dp"
+        android:layout_marginTop="27dp"
         android:layout_marginEnd="11dp"
-        android:layout_marginBottom="58dp"
         android:text="@string/addenda_other"
-        app:layout_constraintBottom_toTopOf="@+id/addenda2NextButton"
         app:layout_constraintEnd_toStartOf="@+id/addendaOtherInput"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addendaInspection" />
@@ -90,13 +82,11 @@
         android:id="@+id/addendaOtherInput"
         android:layout_width="0dp"
         android:layout_height="49dp"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="27dp"
         android:layout_marginEnd="55dp"
-        android:layout_marginBottom="76dp"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="@+id/addenda2NextButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/addendaOtherLabel"
-        app:layout_constraintTop_toTopOf="@+id/addendaInspection" />
+        app:layout_constraintTop_toBottomOf="@+id/addendaInspection" />
 </androidx.constraintlayout.widget.ConstraintLayout>

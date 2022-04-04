@@ -8,19 +8,24 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 public class CollectBuyerInfo extends AppCompatActivity {
     private static final String TAG = "CollectBuyerInfo";
+    private static final String FILE_NAME = "request.txt";
 
     // instance variables
-    String buyerOneName, buyerOneEmail;
-    int buyerOnePhone;
+    String buyerOneName, buyerOneEmail, buyerOnePhone;
     boolean oneBuyer;
 
-    EditText buyerOneNameInput;
-    EditText buyerOneEmailInput;
-    EditText buyerOnePhoneInput;
-
+    EditText buyerOneNameInput, buyerOneEmailInput, buyerOnePhoneInput;
+    RadioGroup numBuyersRadioGroup;
+    RadioButton selectedNumBuyers;
 
     // getters
     public String getBuyerOneName() {
@@ -31,7 +36,7 @@ public class CollectBuyerInfo extends AppCompatActivity {
         return buyerOneEmail;
     }
 
-    public int getBuyerOnePhone() {
+    public String getBuyerOnePhone() {
         return buyerOnePhone;
     }
 
@@ -44,14 +49,17 @@ public class CollectBuyerInfo extends AppCompatActivity {
         buyerOneNameInput = (EditText) findViewById(R.id.buyerOneNameInput);
         buyerOneEmailInput = (EditText) findViewById(R.id.buyerOneEmailInput);
         buyerOnePhoneInput  = (EditText) findViewById(R.id.buyerOnePhoneInput);
+        numBuyersRadioGroup = findViewById(R.id.radioGroup);
 
     }
 
     private void setBuyerInfo() {
         buyerOneName = buyerOneNameInput.getText().toString();
         buyerOneEmail = buyerOneEmailInput.getText().toString();
-        buyerOnePhone = Integer.parseInt(buyerOnePhoneInput.getText().toString());
+        buyerOnePhone = buyerOnePhoneInput.getText().toString();
     }
+
+
 
     public void onRadioButtonClicked(View view) {
         // Is the button now checked?
@@ -70,8 +78,97 @@ public class CollectBuyerInfo extends AppCompatActivity {
         }
     }
 
+    /** Validation methods **/
+    private boolean validateBuyerOnePhone() {
+        if (buyerOneName.isEmpty()) {
+            buyerOneNameInput.setError("Field cannot be empty");
+            return false;
+        }
+        else {
+            buyerOneNameInput.setError(null);
+            return true;
+        }
+    }
+
+    private boolean validateBuyerOneEmail() {
+        if (buyerOneEmail.isEmpty()) {
+            buyerOneEmailInput.setError("Field cannot be empty");
+            return false;
+        }
+        else {
+            buyerOneEmailInput.setError(null);
+            return true;
+        }
+    }
+
+    private boolean validateBuyerOneName() {
+        if (buyerOnePhone.isEmpty()) {
+            buyerOnePhoneInput.setError("Field cannot be empty");
+            return false;
+        }
+        else {
+            buyerOnePhoneInput.setError(null);
+            return true;
+        }
+    }
+
+    private boolean validateNumBuyers() {
+        if (numBuyersRadioGroup.getCheckedRadioButtonId()==-1) {
+            Toast.makeText(this, "Please select number of buyers", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+
+    private void saveUserInput() {
+        // creates a FileWriter Object
+        String lineBreak = "\r\n";
+        FileOutputStream newFileStream = null;
+        // format Strings
+        buyerOneName = "Buyer Name: " + buyerOneNameInput.getText().toString() + "\r\n";
+        buyerOneEmail = "Buyer Email: " + buyerOneEmailInput.getText().toString() + "\r\n";
+        buyerOnePhone = "Buyer Phone: " + buyerOnePhoneInput.getText().toString() + "\r\n";
+
+        try {
+            newFileStream = openFileOutput(FILE_NAME, MODE_APPEND);
+            newFileStream.write(lineBreak.getBytes());
+            newFileStream.write(buyerOneName.getBytes());
+            newFileStream.write(buyerOneEmail.getBytes());
+            newFileStream.write(buyerOnePhone.getBytes());
+          //  Toast.makeText(this, "File written to!" + getFilesDir() + "/" + FILE_NAME, Toast.LENGTH_SHORT).show();
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (newFileStream != null) {
+                try {
+                    newFileStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
     public void nextButton(View view) {
+        /** Set instance variables to user input **/
         setBuyerInfo();
+
+        /** Validate user input **/
+        if (!validateBuyerOneName() | !validateBuyerOneEmail() | !validateBuyerOnePhone() | !validateNumBuyers()) {
+            return;
+        }
+
+        /** save data **/
+        saveUserInput();
+
+
+        /** Collect Buyer 2 Info OR Collect Buyer Address **/
 
         Intent intent;
         if (oneBuyer == false) {
@@ -79,6 +176,9 @@ public class CollectBuyerInfo extends AppCompatActivity {
         } else {
             intent = new Intent(this, CollectBuyerAddress.class);
         }
+
         startActivity(intent);
+
     }
+
 }

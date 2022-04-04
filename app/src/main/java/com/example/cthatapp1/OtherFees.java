@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.EditText;
 
 public class OtherFees extends AppCompatActivity {
+    private static final String FILE_NAME = "request.txt";
 
     String otherFees;
 
@@ -18,7 +19,7 @@ public class OtherFees extends AppCompatActivity {
     }
 
     public void getProtectionPeriod(View view) {
-        Intent intent = new Intent(this, ServiceProviderFees.class);
+        Intent intent = new Intent(this, ProtectionPeriod.class);
         startActivity(intent);
 
         EditText editOtherFees = (EditText) findViewById(R.id.otherFeesInput);

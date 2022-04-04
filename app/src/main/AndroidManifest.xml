@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CThatApp1">
         <activity
+            android:name=".SubmitEntry"
+            android:exported="false" />
+        <activity
             android:name=".DisplayEntry"
             android:exported="false" />
         <activity
@@ -64,9 +67,6 @@
             android:name=".DefineRelationshipToClient"
             android:exported="false" />
         <activity
-            android:name=".RelationshipToClient"
-            android:exported="false" />
-        <activity
             android:name=".CollectBuyerAddress"
             android:exported="false" />
         <activity
@@ -80,9 +80,9 @@
             android:exported="false" />
         <activity
             android:name=".CollectAgentInfo"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".StartRequest" />
         <activity
-            android:name=".MainActivity"
+            android:name=".StartRequest"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

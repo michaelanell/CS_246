@@ -16,8 +16,8 @@ public class Addenda2 extends AppCompatActivity {
         setContentView(R.layout.activity_addenda2);
     }
 
-    public void collectDueByInfo(View view) {
-        Intent intent = new Intent(this, SpecialProvisions.class);
+    public void nextButton(View view) {
+        Intent intent = new Intent(this, SpecialInstructions.class);
         startActivity(intent);
     }
 }

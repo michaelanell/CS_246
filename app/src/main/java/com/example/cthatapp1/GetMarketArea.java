@@ -1,21 +1,28 @@
 package com.example.cthatapp1;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.databinding.tool.util.StringUtils;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 public class GetMarketArea extends AppCompatActivity {
+    private static final String FILE_NAME = "request.txt";
 
     // instance variables
     ArrayList<String> counties = new ArrayList<String>();
     String other;
+    String countListString = " ";
+
 
     EditText otherInput;
 
@@ -58,18 +65,54 @@ public class GetMarketArea extends AppCompatActivity {
 
 
     private void setMarketArea() {
-     if (TextUtils.isEmpty(otherInput.getText().toString())){
-         return;
-     }
-     else {
          other = otherInput.getText().toString();
          counties.add(other);
-     }
+
+        for (int i = 0; i < 5; i++ ) {
+            countListString += counties.get(i) + ", ";
+        }
+    }
+
+    private void saveUserInput() {
+        // creates a FileWriter Object
+
+        String lineBreak = "\r\n";
+        String title = "MarKet Area";
+
+
+        FileOutputStream newFileStream = null;
+        try {
+            newFileStream = openFileOutput(FILE_NAME, MODE_APPEND);
+            newFileStream.write(lineBreak.getBytes());
+            newFileStream.write(title.getBytes());
+            newFileStream.write(countListString.getBytes());
+            newFileStream.write(lineBreak.getBytes());
+
+           // Toast.makeText(this, "File written to!" + getFilesDir() + "/" + FILE_NAME, Toast.LENGTH_SHORT).show();
+        }
+        catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (newFileStream != null) {
+                try {
+                    newFileStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     public void nextButton(View view){
         setMarketArea();
-        Intent intent = new Intent(this, TermLength.class);
+
+        /** save data **/
+        saveUserInput();
+
+       // Intent intent = new Intent(this, DisplayEntry.class);
+       Intent intent = new Intent(this, TermLength.class);
         startActivity(intent);
     }
 

@@ -6,23 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".ProtectionPeriod">
 
-    <TextView
-        android:id="@+id/protectionPeriodTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="217dp"
-        android:layout_marginBottom="48dp"
-        android:text="@string/protection_period"
-        app:layout_constraintBottom_toTopOf="@+id/protectionPeriodLabel"
-        app:layout_constraintStart_toStartOf="@+id/protectionPeriodLabel"
-        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/protectionPeriodInput"
+        android:layout_width="209dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/protectionPeriodNextButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/protectionPeriodLabel" />
 
     <TextView
         android:id="@+id/protectionPeriodLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="19dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="40dp"
         android:labelFor="@id/protectionPeriodInput"
         android:text="@string/protection_period_length"
@@ -30,28 +30,27 @@
         app:layout_constraintEnd_toEndOf="@+id/protectionPeriodInput"
         app:layout_constraintTop_toBottomOf="@+id/protectionPeriodTitle" />
 
-    <EditText
-        android:id="@+id/protectionPeriodInput"
-        android:layout_width="209dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="38dp"
-        android:ems="10"
-        android:inputType="text"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/protectionPeriodNextButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/protectionPeriodLabel" />
+    <TextView
+        android:id="@+id/protectionPeriodTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="217dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/protection_period"
+        app:layout_constraintBottom_toTopOf="@+id/protectionPeriodLabel"
+        app:layout_constraintStart_toStartOf="@+id/protectionPeriodLabel"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/protectionPeriodNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="122dp"
-        android:layout_marginBottom="234dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="80dp"
         android:onClick="getAddenda"
         android:text="@string/protection_period_next_button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/protectionPeriodInput"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/protectionPeriodInput" />
 </androidx.constraintlayout.widget.ConstraintLayout>

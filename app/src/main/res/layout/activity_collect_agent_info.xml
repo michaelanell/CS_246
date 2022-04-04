@@ -10,8 +10,8 @@
 
     <EditText
         android:id="@+id/agentNameInput"
-        android:layout_width="221dp"
-        android:layout_height="48dp"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="36dp"
         android:ems="10"
@@ -32,8 +32,8 @@
 
     <EditText
         android:id="@+id/agentEmailInput"
-        android:layout_width="231dp"
-        android:layout_height="40dp"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="36dp"
         android:ems="10"
@@ -44,19 +44,21 @@
         android:id="@+id/agentEmailLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="84dp"
         android:labelFor="@id/agentEmailInput"
         android:text="@string/agent_email"
         app:layout_constraintEnd_toStartOf="@+id/agentEmailInput"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/agentEmailInput" />
 
     <EditText
         android:id="@+id/agentLicenseNumInput"
-        android:layout_width="232dp"
-        android:layout_height="43dp"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
         android:layout_marginTop="420dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="36dp"
         android:layout_marginBottom="97dp"
         android:ems="10"
         android:inputType="number"
@@ -79,8 +81,8 @@
         android:id="@+id/agentNextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="64dp"
-        android:layout_marginBottom="89dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="80dp"
         android:onClick="nextButton"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
